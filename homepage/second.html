@@ -11,10 +11,10 @@
 </style>
 <script>
     function pushButton(aValue) {
-        let pass = document.getElementById("pw").value = 123;
-        if (pass == 123){
+        let mail = document.getElementById(Email).value = "f22ba114@chuo.ac.jp";
+        if ( Email == "f22ba114@chuo.ac.jp"){
         location.href="theird.html"  
-        }else if (pass == 123){ 
+        }else{
             alert("Email-adress、passwardに誤りがあります。もう一度入力してください。")
         }
         
@@ -25,11 +25,11 @@
     <h1 class="tytle">ログインページ</h1>
     <form>
         <div class="form1">
-            <label for="Mail">Email-adress</label><br>
+            <label>Email-adress</label><br>
             <input type="text" class="control" id="Email">
         </div>
         <div class="form1">
-            <label for="pw">passward</label><br>
+            <label>passward</label><br>
             <input type="password" class="control" id="pw">
         </div>
         <input type="button" value="ログイン" class="bt" onclick="pushButton(this.value)">
