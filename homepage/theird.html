@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       .slide {
+            width: 100%;
+            height: 1500px;
+            background-image: url(S__3833861.jpg);
+            background-repeat: repeat-x;
+            background-size: auto 1000px; 
+            animation: loop 30s linear infinite;
+            position:absolute;
+            top:2%
+        }
+
+        @keyframes loop {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -2000px 0;
+            }
+        }
+    </style>
 </head>
-<body>
+<body onload="rg()">
+    <div class="slide"></div>
     
 </body>
 </html>
