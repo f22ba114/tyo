@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heome</title>
+    <style>
+        .bt{
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+            text-align: center;
+            display: block;
+            text-decoration:none;
+            background-color: brown;
+            border-bottom: 3px solid cadetblue;
+            
+            
+            position: absolute;
+            left: 45%;
+            top: 50%;
+        }
+        
+        body {
+            background-color: white;
+        }
+        
+    </style>
+    <script>
+        function pushButton(aValue){
+        const result = confirm("危険なページにアクセスしようとしています。このページにアクセスすると個人情報などが盗まれる可能性があります。それでもアクセスしますか？　続けるには「OK」を、戻るには「キャンセル」を押してください。")
+        if(result){
+            alert("ページにアクセスします。")
+            location.href="second.html"
+        }else{
+            alert("なんだよ。引っかかんないのかよ、、、。")
+            location.href="hghgh.html"
+        }
+        }
+
+
+    </script>
+</head>
+<body>
+    <input class="bt" type="button" value="PUSH!!" onclick="pushButton(this.value)">
+    
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abg</title>
+</head>
+<style>
+
+</style>
+<script>
+    function pushButton(aValue) {
+        let mail = document.getElementById("Email").value;
+        let pass = document.getElementById("pw").value;
+        if (mail == "f22ba114@chuo.ac.jp" && pass == 1234) {
+            location.href = "theird.html"
+        } else {
+            alert("Email-adress,passwardのどちらかに誤りがあります。もう一度入力してください。")
+        }
+    }
+</script>
+
+<body>
+    <h1 class="tytle">ログインページ</h1>
+    <form>
+        <div class="form1">
+            <label>Email-adress</label><br>
+            <input type="text" class="control" id="Email">
+        </div>
+        <div class="form1">
+            <label>passward</label><br>
+            <input type="password" class="control" id="pw">
+        </div>
+        <input type="button" value="ログイン" class="bt" onclick="pushButton(this.value)">
+    </form>
+</body>
+
+</html>
